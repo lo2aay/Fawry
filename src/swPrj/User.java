@@ -3,7 +3,5 @@ package swPrj;
 public class User {
 
 	public User() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
+//b7b 7mo	
+}}
