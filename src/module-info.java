@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author Loay
- *
- */
-module swPrj {
-}
