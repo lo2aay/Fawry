@@ -1,8 +1,9 @@
-
+package swPrj;
 
 public class User {
 
-//Habiba
-}
+	public User() {
+		// TODO Auto-generated constructor stub
+	}
 
-	
+}
