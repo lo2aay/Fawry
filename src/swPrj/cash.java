@@ -1,9 +1,11 @@
 package swPrj;
 
-public class cash implements paymentMethods {
+public class cash extends paymentMethods {
 
 	public cash() {
-		// TODO Auto-generated constructor stub
+		
+		System.out.println("Payment done by cash");
 	}
+	
 	
 }

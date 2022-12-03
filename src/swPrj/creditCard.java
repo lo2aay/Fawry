@@ -1,9 +1,9 @@
 package swPrj;
 
-public class creditCard implements paymentMethods {
+public class creditCard extends paymentMethods {
 
 	public creditCard() {
-		// TODO Auto-generated constructor stub
+		System.out.println("Payment done by credit card");
 	}
 
 }
