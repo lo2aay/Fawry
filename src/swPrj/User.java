@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class User {
+	public Wallet wal;
+	public Wallet getWal() {
+		return wal;
+	}
 	public String Name;
 	public String email;
 	public int phoneNum;
@@ -11,11 +15,11 @@ public class User {
 
 
 	public User(String n, String p,String e) {
-		// TODO Auto-generated constructor stub
+		
 		Name=n;
 		passwo=p;
 		email=e;
-
+		wal= new Wallet(0.0);
 	}
 	public int searchService() {
 		Scanner myObj=new Scanner(System.in);
@@ -25,7 +29,7 @@ public class User {
 		services.add("2-Internet Payment services");
 		services.add("3-Landline services");
 		services.add("4-Donations");
-		System.out.println("What service you want to search for?");
+		
 		String search=myObj.nextLine();
 		boolean found=false;
 

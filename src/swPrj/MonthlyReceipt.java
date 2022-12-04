@@ -2,10 +2,11 @@ package swPrj;
 
 import java.util.Scanner;
 
-public class NGOs implements ServiceProvider {
+public class MonthlyReceipt implements ServiceProvider {
+
 	public PaymentMethods cash1;
 	public PaymentMethods creditCard1;
-	public NGOs() {
+	public MonthlyReceipt() {
 		cash1 = new Cash();
 		creditCard1=new CreditCard();
 	}

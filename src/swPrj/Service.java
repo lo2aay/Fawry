@@ -1,8 +1,8 @@
 package swPrj;
 
-public class internet extends service{
+public abstract class Service {
 
-	public internet() {
+	public Service() {
 		// TODO Auto-generated constructor stub
 	}
 

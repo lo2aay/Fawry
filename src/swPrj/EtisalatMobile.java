@@ -2,14 +2,17 @@ package swPrj;
 
 import java.util.Scanner;
 
-public class NGOs implements ServiceProvider {
+public class EtisalatMobile implements ServiceProvider {
+
 	public PaymentMethods cash1;
 	public PaymentMethods creditCard1;
-	public NGOs() {
+
+
+	public EtisalatMobile() {
 		cash1 = new Cash();
 		creditCard1=new CreditCard();
-	}
 
+	}
 	@Override
 	public double fee() {
 		System.out.println("What amount you want to pay?");

@@ -1,8 +1,8 @@
 package swPrj;
 
-public class discount extends service {
+public class Discount extends Service {
 
-	public discount() {
+	public Discount() {
 		// TODO Auto-generated constructor stub
 	}
 

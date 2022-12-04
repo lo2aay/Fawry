@@ -2,10 +2,10 @@ package swPrj;
 
 import java.util.ArrayList;
 
-public class account {
+public class Account {
 	
 	ArrayList<User> userData;
-	public account() {
+	public Account() {
 		userData = new ArrayList<User>();
 		userData.add(new User("","",""));
 	}

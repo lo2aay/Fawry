@@ -2,10 +2,11 @@ package swPrj;
 
 import java.util.Scanner;
 
-public class NGOs implements ServiceProvider {
+public class VodafoneInternet implements ServiceProvider {
+
 	public PaymentMethods cash1;
 	public PaymentMethods creditCard1;
-	public NGOs() {
+	public VodafoneInternet() {
 		cash1 = new Cash();
 		creditCard1=new CreditCard();
 	}
