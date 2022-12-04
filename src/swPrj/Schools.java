@@ -6,9 +6,11 @@ public class Schools implements ServiceProvider {
 
 	public PaymentMethods cash1;
 	public PaymentMethods creditCard1;
+	public PaymentMethods wallet1;
 	public Schools() {
 		cash1 = new Cash();
 		creditCard1=new CreditCard();
+		wallet1 = new Wallet();
 	}
 
 	@Override

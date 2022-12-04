@@ -1,27 +1,12 @@
 package swPrj;
 
 public class Refund {
-	public String phone;
+	public String name;
 	public double money;
-	
-	public String getPhone() {
-		return phone;
-	}
+	public boolean state;
 
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
-
-	public double getMoney() {
-		return money;
-	}
-
-	public void setMoney(double money) {
-		this.money = money;
-	}
-
-	public Refund(String p, double m) {
-		phone =p;
+	public Refund(String n, double m) {
+		name =n;
 		money = m;
 	}
 

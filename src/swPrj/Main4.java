@@ -39,7 +39,12 @@ public class Main4 {
 				if (newone.signIn(name2, password2, email2)) {
 					System.out.println("Signed In successfully");
 					System.out.println(" ");
+					System.out.println("Congratulations we gave you a free wallet :)");
+					System.out.println("How much funds you want to add to the wallet?");
+					Scanner funds = new Scanner(System.in);
+					double fund = funds.nextDouble();
 					User newOne = new User(name2, password2, email2);
+					newOne.addFunds(fund);
 					System.out.println("Which service you want to search for?");
 					int searchChoice = newOne.searchService();
 					if (searchChoice == 1) {
@@ -66,7 +71,9 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (mR.voda.cash1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 2) {
 								System.out.print("Enter amount of money: ");
@@ -77,10 +84,23 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (mR.voda.creditCard1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 3) {
+								System.out.print("Enter amount of money: ");
+								double amount = myObj.nextDouble();
+								System.out.println("Enter your phone number (must equal 11 numbers)");
+								String num = n.nextLine();
+								Form fo = new Form(num, amount);
+								Handler h = new Handler(fo);
 
+								if (mR.voda.wallet1.pay(newOne, amount) && h.handle()) {
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
+								}
 							}
 						} else if (providersChoice == 2) {
 							System.out.println("Choose your payment method: ");
@@ -97,7 +117,9 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (mR.etisalat.cash1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 2) {
 								System.out.print("Enter amount of money: ");
@@ -108,9 +130,23 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (mR.etisalat.creditCard1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 3) {
+								System.out.print("Enter amount of money: ");
+								double amount = myObj.nextDouble();
+								System.out.println("Enter your phone number (must equal 11 numbers)");
+								String num = n.nextLine();
+								Form fo = new Form(num, amount);
+								Handler h = new Handler(fo);
+
+								if (mR.etisalat.wallet1.pay(newOne, amount) && h.handle()) {
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
+								}
 
 							}
 						} else if (providersChoice == 3) {
@@ -128,7 +164,9 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (mR.orange.cash1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 2) {
 								System.out.print("Enter amount of money: ");
@@ -139,9 +177,23 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (mR.orange.creditCard1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 3) {
+								System.out.print("Enter amount of money: ");
+								double amount = myObj.nextDouble();
+								System.out.println("Enter your phone number (must equal 11 numbers)");
+								String num = n.nextLine();
+								Form fo = new Form(num, amount);
+								Handler h = new Handler(fo);
+
+								if (mR.orange.wallet1.pay(newOne, amount) && h.handle()) {
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
+								}
 
 							}
 						} else if (providersChoice == 4) {
@@ -159,7 +211,9 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (mR.we.cash1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 2) {
 								System.out.print("Enter amount of money: ");
@@ -170,9 +224,23 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (mR.we.creditCard1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 3) {
+								System.out.print("Enter amount of money: ");
+								double amount = myObj.nextDouble();
+								System.out.println("Enter your phone number (must equal 11 numbers)");
+								String num = n.nextLine();
+								Form fo = new Form(num, amount);
+								Handler h = new Handler(fo);
+
+								if (mR.we.wallet1.pay(newOne, amount) && h.handle()) {
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
+								}
 
 							}
 						} else {
@@ -203,7 +271,9 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (in.voda.cash1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 2) {
 								System.out.print("Enter amount of money: ");
@@ -214,9 +284,23 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (in.voda.creditCard1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 3) {
+								System.out.print("Enter amount of money: ");
+								double amount = myObj.nextDouble();
+								System.out.println("Enter your phone number (must equal 11 numbers)");
+								String num = n.nextLine();
+								Form fo = new Form(num, amount);
+								Handler h = new Handler(fo);
+
+								if (in.voda.wallet1.pay(newOne, amount) && h.handle()) {
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
+								}
 
 							}
 						} else if (providersChoice == 2) {
@@ -234,7 +318,9 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (in.etisalat.cash1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 2) {
 								System.out.print("Enter amount of money: ");
@@ -245,10 +331,23 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (in.etisalat.creditCard1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 3) {
+								System.out.print("Enter amount of money: ");
+								double amount = myObj.nextDouble();
+								System.out.println("Enter your phone number (must equal 11 numbers)");
+								String num = n.nextLine();
+								Form fo = new Form(num, amount);
+								Handler h = new Handler(fo);
 
+								if (in.etisalat.wallet1.pay(newOne, amount) && h.handle()) {
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
+								}
 							}
 						} else if (providersChoice == 3) {
 							System.out.println("Choose your payment method: ");
@@ -265,7 +364,9 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (in.orange.cash1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 2) {
 								System.out.print("Enter amount of money: ");
@@ -276,9 +377,23 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (in.orange.creditCard1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 3) {
+								System.out.print("Enter amount of money: ");
+								double amount = myObj.nextDouble();
+								System.out.println("Enter your phone number (must equal 11 numbers)");
+								String num = n.nextLine();
+								Form fo = new Form(num, amount);
+								Handler h = new Handler(fo);
+
+								if (in.orange.wallet1.pay(newOne, amount) && h.handle()) {
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
+								}
 
 							}
 						} else if (providersChoice == 4) {
@@ -296,7 +411,9 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (in.we.cash1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 2) {
 								System.out.print("Enter amount of money: ");
@@ -307,10 +424,23 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (in.we.creditCard1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 3) {
+								System.out.print("Enter amount of money: ");
+								double amount = myObj.nextDouble();
+								System.out.println("Enter your phone number (must equal 11 numbers)");
+								String num = n.nextLine();
+								Form fo = new Form(num, amount);
+								Handler h = new Handler(fo);
 
+								if (in.we.wallet1.pay(newOne, amount) && h.handle()) {
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
+								}
 							}
 						} else {
 							System.out.println("Wrong Choice");
@@ -337,7 +467,9 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (ll.mR.cash1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 2) {
 								System.out.print("Enter amount of money: ");
@@ -348,10 +480,23 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (ll.mR.creditCard1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 3) {
+								System.out.print("Enter amount of money: ");
+								double amount = myObj.nextDouble();
+								System.out.println("Enter your phone number (must equal 11 numbers)");
+								String num = n.nextLine();
+								Form fo = new Form(num, amount);
+								Handler h = new Handler(fo);
 
+								if (ll.mR.wallet1.pay(newOne, amount) && h.handle()) {
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
+								}
 							}
 						} else if (providersChoice == 2) {
 							System.out.println("Choose your payment method: ");
@@ -368,7 +513,9 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (ll.qR.cash1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 2) {
 								System.out.print("Enter amount of money: ");
@@ -379,10 +526,23 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (ll.qR.creditCard1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 3) {
+								System.out.print("Enter amount of money: ");
+								double amount = myObj.nextDouble();
+								System.out.println("Enter your phone number (must equal 11 numbers)");
+								String num = n.nextLine();
+								Form fo = new Form(num, amount);
+								Handler h = new Handler(fo);
 
+								if (ll.qR.wallet1.pay(newOne, amount) && h.handle()) {
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
+								}
 							}
 						} else {
 							System.out.println("Wrong Choice");
@@ -410,7 +570,9 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (d.cH.cash1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 2) {
 								System.out.print("Enter amount of money: ");
@@ -421,10 +583,23 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (d.cH.creditCard1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 3) {
+								System.out.print("Enter amount of money: ");
+								double amount = myObj.nextDouble();
+								System.out.println("Enter your phone number (must equal 11 numbers)");
+								String num = n.nextLine();
+								Form fo = new Form(num, amount);
+								Handler h = new Handler(fo);
 
+								if (d.cH.wallet1.pay(newOne, amount) && h.handle()) {
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
+								}
 							}
 						} else if (providersChoice == 2) {
 							System.out.println("Choose your payment method: ");
@@ -441,7 +616,9 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (d.s.cash1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 2) {
 								System.out.print("Enter amount of money: ");
@@ -452,10 +629,23 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (d.s.creditCard1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 3) {
+								System.out.print("Enter amount of money: ");
+								double amount = myObj.nextDouble();
+								System.out.println("Enter your phone number (must equal 11 numbers)");
+								String num = n.nextLine();
+								Form fo = new Form(num, amount);
+								Handler h = new Handler(fo);
 
+								if (d.s.wallet1.pay(newOne, amount) && h.handle()) {
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
+								}
 							}
 						} else if (providersChoice == 3) {
 							System.out.println("Choose your payment method: ");
@@ -472,7 +662,9 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (d.ngo.cash1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 2) {
 								System.out.print("Enter amount of money: ");
@@ -483,10 +675,23 @@ public class Main4 {
 								Handler h = new Handler(fo);
 
 								if (d.ngo.creditCard1.pay(newOne, amount) && h.handle()) {
-									System.out.println("Payment is done successfully");
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
 								}
 							} else if (paymentChoice == 3) {
+								System.out.print("Enter amount of money: ");
+								double amount = myObj.nextDouble();
+								System.out.println("Enter your phone number (must equal 11 numbers)");
+								String num = n.nextLine();
+								Form fo = new Form(num, amount);
+								Handler h = new Handler(fo);
 
+								if (d.ngo.wallet1.pay(newOne, amount) && h.handle()) {
+									System.out.println("Payment is done successfully :)");
+								}else {
+									System.out.println("Payment failed");
+								}
 							}
 
 						} else {
@@ -506,4 +711,4 @@ public class Main4 {
 
 		}
 	}
-}
+} 

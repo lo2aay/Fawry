@@ -6,10 +6,13 @@ public class MonthlyReceipt implements ServiceProvider {
 
 	public PaymentMethods cash1;
 	public PaymentMethods creditCard1;
+	public PaymentMethods wallet1;
 	public MonthlyReceipt() {
 		cash1 = new Cash();
 		creditCard1=new CreditCard();
+		wallet1 = new Wallet();
 	}
+
 
 	@Override
 	public double fee() {

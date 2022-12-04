@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Account {
 	
-	ArrayList<User> userData;
+	static ArrayList<User> userData;
 	public Account() {
 		userData = new ArrayList<User>();
 		userData.add(new User("","",""));

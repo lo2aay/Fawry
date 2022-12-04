@@ -3,7 +3,7 @@ package swPrj;
 import java.util.ArrayList;
 
 public class Admin {
-	ArrayList<Refund> r;
+	static ArrayList<Refund> r;
 	
 	public Admin() {
 		r = new ArrayList<Refund>();
@@ -11,13 +11,15 @@ public class Admin {
 	public void newReq(Refund req) {
 		r.add(req);
 	}
-	public void requests() {
-		for(int i=0;i<r.size();i++) {
-			System.out.println(r.get(i).getPhone());
-			System.out.println(r.get(i).getMoney());
-			// y-accept aw y2olo shoflk klba
-			
+	public boolean acceptRequest(String username) {
+		for (User itr : Account.userData) {
+			if(itr.Name.equals(username)) {
+				itr.wal += itr.lastPaidMoney;
+				return true;
+			}
 		}
+		return false;
 	}
+	
 
 }
