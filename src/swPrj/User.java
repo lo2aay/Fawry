@@ -53,7 +53,7 @@ public class User {
 			}
 		}
 		if (found) {
-			System.out.println("What service you want to use?");
+			System.out.println("Choose the number of the service you want to use?");
 			int choice = myObj2.nextInt();
 			return choice;
 		} else {

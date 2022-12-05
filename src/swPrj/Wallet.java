@@ -1,6 +1,6 @@
 package swPrj;
 
-public class Wallet implements PaymentMethods{
+public class Wallet implements PaymentMethods {
 
 	public Wallet() {
 
@@ -8,14 +8,14 @@ public class Wallet implements PaymentMethods{
 
 	@Override
 	public boolean pay(User user, Double money) {
-		
-		if(user.wal>=money) {
+
+		if (user.wal >= money) {
 			user.wal -= money;
 			user.lastPaidMoney = money;
 
 			return true;
-		}else {
-		return false;}
+		} else {
+			return false;
+		}
 	}
 }
-	

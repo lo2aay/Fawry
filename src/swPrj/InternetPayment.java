@@ -14,4 +14,10 @@ public class InternetPayment extends Service{
 		etisalat = new EtisalatInternet();
 	}
 
+	@Override
+	public void serviceName() {
+		System.out.println("InternetPayment");
+		
+	}
+
 }

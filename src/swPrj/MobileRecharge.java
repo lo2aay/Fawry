@@ -14,4 +14,10 @@ public class MobileRecharge extends Service {
 		etisalat = new EtisalatMobile();
 	}
 
+	@Override
+	public void serviceName() {
+		System.out.println("MobileRecharge");
+		
+	}
+
 }

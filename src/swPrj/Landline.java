@@ -10,4 +10,10 @@ public class Landline extends Service {
 		qR= new QuarterReceipt();
 	}
 
+	@Override
+	public void serviceName() {
+		System.out.println("Landline");
+		
+	}
+
 }

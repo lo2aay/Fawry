@@ -1,9 +1,9 @@
 package swPrj;
 
-public class Discount extends Service {
+public interface Discount {
 
-	public Discount() {
-		// TODO Auto-generated constructor stub
-	}
+	public double getDiscount();
+
+	public void setDiscount(double value);
 
 }

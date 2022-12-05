@@ -27,6 +27,7 @@ public class Account {
 	public int checkSignUp(String email) {
 		for(int i=0;i<userData.size();i++) {
 			if(userData.get(i).email.equals(email)) {
+				
 				return i;
 			}
 	}
@@ -34,19 +35,20 @@ public class Account {
 		
 	}
 	public boolean signIn(String name, String passwo, String email) {
-		if(checkSignIn(email,passwo)!=-1) {
+		if(checkSignIn(email,passwo)!=null) {
+			
 			return true;
 		}else {
 			return false;
 		}
 	
 	}
-	public int checkSignIn(String email, String passwo) {
+	static User checkSignIn(String email, String passwo) {
 		for(int i=0;i<userData.size();i++) {
 			if(userData.get(i).email.equals(email) && userData.get(i).passwo.equals(passwo)) {
-				return i;
+				return userData.get(i);
 			}
 		}
-		return -1;
+		return null;
 	}
 }

@@ -1,9 +1,20 @@
 package swPrj;
 
-public class OverallDiscount extends Service{
+public class OverallDiscount extends DiscountDecorator {
 
 	public OverallDiscount() {
-		// TODO Auto-generated constructor stub
+	}
+
+	public OverallDiscount(Discount d) {
+		super(d);
+	}
+
+	public void setDiscount(double value) {
+		amount.setDiscount(value);
+	}
+
+	public double getDiscount() {
+		return amount.getDiscount();
 	}
 
 }

@@ -5,11 +5,16 @@ public class Donations extends Service {
 	public Schools s;
 	public NGOs ngo;
 	public Donations() {
-		// TODO Auto-generated constructor stub
 		cH = new CancerHospital();
 		s = new Schools();
 		ngo = new NGOs();
 		
 	}
+	@Override
+	public void serviceName() {
+		System.out.println("Donations");
+		
+	}
+	
 
 }
