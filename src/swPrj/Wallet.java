@@ -1,7 +1,6 @@
 package swPrj;
 
 public class Wallet implements PaymentMethods{
-	private Form fo;
 
 	public Wallet() {
 

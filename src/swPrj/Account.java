@@ -18,6 +18,12 @@ public class Account {
 			return false;
 		}
 	}
+	public boolean checkSignOut() {
+		if(userData.size()==0) {
+			return false;
+		}
+		return true;
+	}
 	public int checkSignUp(String email) {
 		for(int i=0;i<userData.size();i++) {
 			if(userData.get(i).email.equals(email)) {

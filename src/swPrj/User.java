@@ -21,11 +21,11 @@ public class User {
 		refundRequest = false;
 	}
 
-	public boolean createRefundRequest() {
-		if(lastPaidMoney<=0) {
+	public boolean createRefundRequest(User us) {
+		if(us.lastPaidMoney<=0) {
 			return false;
 		}
-		Admin.r.add(new Refund(Name,lastPaidMoney));
+		Admin.r.add(new Refund(us.Name,lastPaidMoney));
 		return true;
 	}
 
