@@ -101,7 +101,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (mR.voda.creditCard1.pay(newOne, amount + o) && h.handle()) {
+									if (mR.voda.creditCard1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -121,7 +121,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (mR.voda.wallet1.pay(newOne, amount + o) && h.handle()) {
+									if (mR.voda.wallet1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -148,7 +148,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (mR.etisalat.cash1.pay(newOne, amount + o) && h.handle()) {
+									if (mR.etisalat.cash1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -168,7 +168,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (mR.etisalat.creditCard1.pay(newOne, amount + o) && h.handle()) {
+									if (mR.etisalat.creditCard1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -188,7 +188,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (mR.etisalat.wallet1.pay(newOne, amount + o) && h.handle()) {
+									if (mR.etisalat.wallet1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -216,7 +216,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (mR.orange.cash1.pay(newOne, amount + o) && h.handle()) {
+									if (mR.orange.cash1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -236,7 +236,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (mR.orange.creditCard1.pay(newOne, amount + o) && h.handle()) {
+									if (mR.orange.creditCard1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -256,7 +256,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (mR.orange.wallet1.pay(newOne, amount + o) && h.handle()) {
+									if (mR.orange.wallet1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -284,7 +284,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (mR.we.cash1.pay(newOne, amount + o) && h.handle()) {
+									if (mR.we.cash1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -304,7 +304,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (mR.we.creditCard1.pay(newOne, amount + o) && h.handle()) {
+									if (mR.we.creditCard1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -324,7 +324,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (mR.we.wallet1.pay(newOne, amount + o) && h.handle()) {
+									if (mR.we.wallet1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -365,7 +365,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (in.voda.cash1.pay(newOne, amount + o) && h.handle()) {
+									if (in.voda.cash1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -385,7 +385,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (in.voda.creditCard1.pay(newOne, amount + o) && h.handle()) {
+									if (in.voda.creditCard1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -405,7 +405,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (in.voda.wallet1.pay(newOne, amount + o) && h.handle()) {
+									if (in.voda.wallet1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -433,7 +433,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (in.etisalat.cash1.pay(newOne, amount + o) && h.handle()) {
+									if (in.etisalat.cash1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -453,7 +453,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (in.etisalat.creditCard1.pay(newOne, amount + o) && h.handle()) {
+									if (in.etisalat.creditCard1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -473,7 +473,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (in.etisalat.wallet1.pay(newOne, amount + o) && h.handle()) {
+									if (in.etisalat.wallet1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -500,7 +500,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (in.orange.cash1.pay(newOne, amount + o) && h.handle()) {
+									if (in.orange.cash1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -520,7 +520,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (in.orange.creditCard1.pay(newOne, amount + o) && h.handle()) {
+									if (in.orange.creditCard1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -540,7 +540,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (in.orange.wallet1.pay(newOne, amount + o) && h.handle()) {
+									if (in.orange.wallet1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -568,7 +568,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (in.we.cash1.pay(newOne, amount + o) && h.handle()) {
+									if (in.we.cash1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -588,7 +588,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (in.we.creditCard1.pay(newOne, amount + o) && h.handle()) {
+									if (in.we.creditCard1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -608,7 +608,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (in.we.wallet1.pay(newOne, amount + o) && h.handle()) {
+									if (in.we.wallet1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -645,7 +645,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (ll.mR.cash1.pay(newOne, amount + o) && h.handle()) {
+									if (ll.mR.cash1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -665,7 +665,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (ll.mR.creditCard1.pay(newOne, amount + o) && h.handle()) {
+									if (ll.mR.creditCard1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -685,7 +685,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (ll.mR.wallet1.pay(newOne, amount + o) && h.handle()) {
+									if (ll.mR.wallet1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -712,7 +712,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (ll.qR.cash1.pay(newOne, amount + o) && h.handle()) {
+									if (ll.qR.cash1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -732,7 +732,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (ll.qR.creditCard1.pay(newOne, amount + o) && h.handle()) {
+									if (ll.qR.creditCard1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -752,7 +752,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (ll.qR.wallet1.pay(newOne, amount + o) && h.handle()) {
+									if (ll.qR.wallet1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -790,7 +790,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (d.cH.cash1.pay(newOne, amount + o) && h.handle()) {
+									if (d.cH.cash1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -810,7 +810,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (d.cH.creditCard1.pay(newOne, amount + o) && h.handle()) {
+									if (d.cH.creditCard1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -830,7 +830,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (d.cH.wallet1.pay(newOne, amount + o) && h.handle()) {
+									if (d.cH.wallet1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -857,7 +857,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (d.s.cash1.pay(newOne, amount + o) && h.handle()) {
+									if (d.s.cash1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -877,7 +877,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (d.s.creditCard1.pay(newOne, amount + o) && h.handle()) {
+									if (d.s.creditCard1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -897,7 +897,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (d.s.wallet1.pay(newOne, amount + o) && h.handle()) {
+									if (d.s.wallet1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -924,7 +924,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (d.ngo.cash1.pay(newOne, amount + o) && h.handle()) {
+									if (d.ngo.cash1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -944,7 +944,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (d.ngo.creditCard1.pay(newOne, amount + o) && h.handle()) {
+									if (d.ngo.creditCard1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
@@ -964,7 +964,7 @@ public class Display {
 										s = boss.sd.get(0).getDiscount();
 									}
 									o += s;
-									if (d.ngo.wallet1.pay(newOne, amount + o) && h.handle()) {
+									if (d.ngo.wallet1.pay(newOne, amount - o) && h.handle()) {
 										System.out.println("Payment is done successfully :)");
 									} else {
 										System.out.println("Payment failed");
