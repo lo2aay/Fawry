@@ -15,7 +15,8 @@ To run the project:<br>
   "username":"FCAI",<br>
   "password":"CU"<br>
 }<br>
-8-Click send
+8-Write the URL
+9-Click send
 <br>
 NOTE:There are functions you don't want to add the params like above example but you should write them like that -> 127.0.0.1:8080/Wallet/Add/50 <br>
 the "50" in the last of the url is the amount the user need to add in wallet
