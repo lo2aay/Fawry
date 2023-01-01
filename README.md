@@ -1,13 +1,13 @@
 # Fawry
-Project title : Fawry
-We generated sping intializr by java 17 versioin and maven
-All team members has java 19 in their IDE
-We used intellij IDE to write the code
-To run the project:
-1- Run the program
-2- Go to postman
-3-Make a new request
-4-Click raw
+Project title : Fawry<br>
+We generated sping intializr by java 17 versioin and maven<br>
+All team members has java 19 in their IDE<br>
+We used intellij IDE to write the code<br>
+To run the project:<br>
+1- Run the program<br>
+2- Go to postman<br>
+3-Make a new request<br>
+4-Click raw<br>
 5-Click json<br>
 6-Choose GET or POST<br>
 7-if it's post -> write the paramaters names like this for example -> <br>
@@ -28,7 +28,7 @@ To know the params you want to write check the link below ↓
 
 To view postman -> we have sent an invite to our eng. (Eng/Ahmed Hassan)
 and here is a link if anyone else wants to join 
-https://api.postman.com/collections/25110914-db54f4b7-72c9-49bc-9b17-cd75631a70b1?access_key=PMAT-01GNQD2V5XVMXVJVFPJKTQWWVV
+https://elements.getpostman.com/redirect?entityId=25110914-db54f4b7-72c9-49bc-9b17-cd75631a70b1&entityType=collection <br>
 -> if you want to use this link you should import in postman via link and write this link
 To use the functions of the program we have added the URLs in the table you want to type
 Thanks
