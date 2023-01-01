@@ -7,18 +7,19 @@ To run the project:<br>
 1- Run the program<br>
 2- Go to postman<br>
 3-Make a new request<br>
-4-Click raw<br>
-5-Click json<br>
-6-Choose GET or POST<br>
-7-if it's post -> write the paramaters names like this for example -> <br>
+4-Click body
+5-Click raw<br>
+6-Click json<br>
+7-Choose GET or POST<br>
+8-if it's post -> write the paramaters names like this for example -> <br>
 {<br>
   "username":"FCAI",<br>
   "password":"CU"<br>
 }<br>
-8-Write the URL
-9-Click send
+9-Write the URL
+10-Click send
 <br>
-NOTE:There are functions you don't want to add the params like above example but you should write them like that -> 127.0.0.1:8080/Wallet/Add/50 <br>
+NOTE:There are functions you don't want to add the params like above example but you should write them like that in the URL -> 127.0.0.1:8080/Wallet/Add/50 <br>
 the "50" in the last of the url is the amount the user need to add in wallet
 <br>
 the functions you want to use the second way is -> addMoneyToWallet ( in class WalletController) - addRequest( in class RefundController) - searchService ( in class Account Controller)
