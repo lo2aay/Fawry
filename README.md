@@ -8,13 +8,13 @@ To run the project:
 2- Go to postman
 3-Make a new request
 4-Click raw
-5-Click json
-6-Choose GET or POST
-7-if it's post -> write the paramaters names like this for example -> 
-{
-  "username":"FCAI",
-  "password":"CU"
-}
+5-Click json<br>
+6-Choose GET or POST<br>
+7-if it's post -> write the paramaters names like this for example -> <br>
+{<br>
+  "username":"FCAI",<br>
+  "password":"CU"<br>
+}<br>
 8-Click send
 <br>
 NOTE:There are functions you don't want to add the params like above example but you should write them like that -> 127.0.0.1:8080/Wallet/Add/50 <br>
